@@ -9,6 +9,6 @@ This is a project that was created in line with the backend developer position.
 
 Laravel, Vue.js, Axios, Bootstrap, Composer, Node.js, Npm
 
-# Installation
+## Installation
 1) composer install
 2) npm install
