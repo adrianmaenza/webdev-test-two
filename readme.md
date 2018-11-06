@@ -12,3 +12,5 @@ Laravel, Vue.js, Axios, Bootstrap, Composer, Node.js, Npm
 ## Installation
 1) composer install
 2) npm install
+3) setup database credentials in the .env file
+4) run php artisan migrate from the project root (exported version available as backup)
