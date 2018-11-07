@@ -29,6 +29,6 @@ class User extends Authenticatable
     ];
 
     public function attributes(){
-        return $this->belongsToMany("\App\Attribute");
+        return $this->belongsToMany("\App\Attribute")->withPivot('value');
     }
 }

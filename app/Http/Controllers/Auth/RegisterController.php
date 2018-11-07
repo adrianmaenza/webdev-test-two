@@ -65,11 +65,12 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        // 
+        $date_of_birth = $data['date_of_birth'] . ' 00:00:00';
+        // die($date_of_birth);
         return User::create([
             'first_name' => $data['first_name'],
             'surname' => $data['surname'],
-            'date_of_birth' => $data['date_of_birth'],
+            'date_of_birth' => $date_of_birth,
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);

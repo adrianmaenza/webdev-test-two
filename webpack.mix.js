@@ -11,5 +11,8 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+mix
+    .setPublicPath('public_html')
+    .js('resources/js/app.js', 'js')
+    .sass('resources/sass/app.scss', 'css')
+    .copy('resources/css/dashboard.css', 'public_html/css');
